@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+div {
+    display:flex;
+}
+
+.grid {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    line-height:30px;
+    flex-direction: column;
+    height: 100%;
+}
+
+.column {
+    flex: 1;
+    background: white;
+    border: black solid 1px;
+}
+
+.row {
+    flex: 1;
+    border: rgb(224, 223, 223) solid 1px;
+}
+
+.row::before {
+    content:'';
+    float:left;
+    padding-top: 45%;
+}
+
+.hoverPen {
+    background-color: aqua;
+}
